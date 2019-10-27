@@ -1,0 +1,18 @@
+Package Console
+
+PM> dotnet ef dbcontext list -s .\OdeToFood\OdeToFood.csproj  
+OdeToFood.Data.OdeToFoodDbContext
+
+PM>dotnet ef dbcontext info -s OdeToFood\OdeToFood.csproj
+ or
+File Explorer
+C:\develop\OdeToFood\OdeToFood\OdeToFood.Data>dotnet ef dbcontext info -s ..\OdeToFood\OdeToFood.csproj 
+
+- Will give this result:
+
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'OdeToFoodDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128
+Provider name: Microsoft.EntityFrameworkCore.SqlServer
+Database name: OdeToFood
+Data source: (localdb)\MSSQLLocalDB
+Options: MaxPoolSize=128
