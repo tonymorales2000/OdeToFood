@@ -59,14 +59,16 @@ namespace OdeToFood.Pages.Restaurants
                 {
                     return RedirectToPage("./NotFound");
                 }
-
+                TempData["Message"] = "Restaurant saved";
             }
             else
             {
                 Restaurant = restaurantData.Add(Restaurant);
+                TempData["Message"] = "Restaurant added";
             }
 
             restaurantData.Commit();
+            
             return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
 
         }
