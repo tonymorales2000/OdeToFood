@@ -16,3 +16,18 @@ Provider name: Microsoft.EntityFrameworkCore.SqlServer
 Database name: OdeToFood
 Data source: (localdb)\MSSQLLocalDB
 Options: MaxPoolSize=128
+
+Adding Migration
+PM> add-migration InitalCreate
+	or
+C:\develop\OdeToFood\OdeToFood\OdeToFood.Data>dotnet ef migrations add InitialCreate -s ..\OdeToFood\OdeToFood.csproj
+
+Running app from command line
+c:\>dotnet run
+
+
+ [BindProperty(SupportsGet = true)]
+  public string SearchTerm { get; set; }
+
+
+
